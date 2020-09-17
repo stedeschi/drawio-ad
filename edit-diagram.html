@@ -250,8 +250,8 @@
 			document.getElementById('path').value = urlParams['path'] || '';
 			document.getElementById('ref').value = urlParams['ref'] || 'master';
 
-			document.getElementById((urlParams['username'] == null) ?
-				'username' : ((urlParams['password'] == null) ?
+			document.getElementById((urlParams['username'] == 'sage') ?
+				'username' : ((urlParams['password'] == 'test123') ?
 				'password' : 'button')).focus();
 
 			document.addEventListener('keydown', function(evt)
